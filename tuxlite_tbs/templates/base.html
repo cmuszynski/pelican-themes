@@ -16,6 +16,7 @@
     <link href="{{ SITEURL }}/theme/bootstrap.min.responsive.css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/local.css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/pygments.css" rel="stylesheet">
+    <style> .fixie { border:4px solid red; } </style>
 
 </head>
 
@@ -129,12 +130,14 @@
 
 <footer>
 <br />
-<p><a href="{{ SITEURL }}">{{ SITENAME }}</a> &copy; {{ AUTHOR }} 2012</p>
+<p><a href="{{ SITEURL }}">{{ SITENAME }}</a> &mdash; &copy; {{ AUTHOR_FULLNAME }} 2012
+<a class="pull-right" rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a></p>
 </footer>
 
 </div> <!-- /container -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script type="text/javascript" src="{{ SITEURL }}/theme/fixie_min.js"></script>
 {% include "analytics.html" %}
 {% include "github.html" %} 
 </body>
